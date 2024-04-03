@@ -1,0 +1,299 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : OpenServer  5.4.3 (new) MySql 8.0
+Source Server Version : 80030
+Source Host           : localhost:3306
+Source Database       : intasbase
+
+Target Server Type    : MYSQL
+Target Server Version : 80030
+File Encoding         : 65001
+
+Date: 2024-04-04 00:33:15
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for rides
+-- ----------------------------
+DROP TABLE IF EXISTS `rides`;
+CREATE TABLE `rides` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `region_id` int NOT NULL,
+  `courier_id` int DEFAULT NULL,
+  `date_ride_from_moscow` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=267 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- ----------------------------
+-- Records of rides
+-- ----------------------------
+INSERT INTO `rides` VALUES ('1', '2', '8', '1712091600');
+INSERT INTO `rides` VALUES ('2', '3', '1', '1712091600');
+INSERT INTO `rides` VALUES ('3', '3', '9', '1712091600');
+INSERT INTO `rides` VALUES ('4', '8', '5', '1712178000');
+INSERT INTO `rides` VALUES ('5', '3', '6', '1712178000');
+INSERT INTO `rides` VALUES ('6', '5', '10', '1712178000');
+INSERT INTO `rides` VALUES ('7', '6', '7', '1712264400');
+INSERT INTO `rides` VALUES ('8', '5', '14', '1712264400');
+INSERT INTO `rides` VALUES ('9', '2', '15', '1712264400');
+INSERT INTO `rides` VALUES ('10', '3', '13', '1712350800');
+INSERT INTO `rides` VALUES ('11', '9', '4', '1712350800');
+INSERT INTO `rides` VALUES ('12', '3', '6', '1712350800');
+INSERT INTO `rides` VALUES ('13', '2', '12', '1712437200');
+INSERT INTO `rides` VALUES ('14', '4', '6', '1712437200');
+INSERT INTO `rides` VALUES ('15', '2', '3', '1712437200');
+INSERT INTO `rides` VALUES ('16', '10', '3', '1712437200');
+INSERT INTO `rides` VALUES ('17', '3', '14', '1712523600');
+INSERT INTO `rides` VALUES ('18', '9', '2', '1712523600');
+INSERT INTO `rides` VALUES ('19', '6', '15', '1712523600');
+INSERT INTO `rides` VALUES ('20', '10', '10', '1712523600');
+INSERT INTO `rides` VALUES ('21', '3', '7', '1712610000');
+INSERT INTO `rides` VALUES ('22', '3', '4', '1712610000');
+INSERT INTO `rides` VALUES ('23', '5', '12', '1712610000');
+INSERT INTO `rides` VALUES ('24', '7', '1', '1712696400');
+INSERT INTO `rides` VALUES ('25', '4', '3', '1712782800');
+INSERT INTO `rides` VALUES ('26', '6', '15', '1712869200');
+INSERT INTO `rides` VALUES ('27', '7', '8', '1712869200');
+INSERT INTO `rides` VALUES ('28', '4', '11', '1712869200');
+INSERT INTO `rides` VALUES ('29', '1', '13', '1712869200');
+INSERT INTO `rides` VALUES ('30', '4', '12', '1712955600');
+INSERT INTO `rides` VALUES ('31', '6', '13', '1713042000');
+INSERT INTO `rides` VALUES ('32', '3', '9', '1713042000');
+INSERT INTO `rides` VALUES ('33', '8', '9', '1713042000');
+INSERT INTO `rides` VALUES ('34', '4', '6', '1713128400');
+INSERT INTO `rides` VALUES ('35', '6', '12', '1713214800');
+INSERT INTO `rides` VALUES ('36', '1', '9', '1713301200');
+INSERT INTO `rides` VALUES ('37', '1', '10', '1713301200');
+INSERT INTO `rides` VALUES ('38', '10', '14', '1713387600');
+INSERT INTO `rides` VALUES ('39', '9', '8', '1713474000');
+INSERT INTO `rides` VALUES ('40', '8', '7', '1713474000');
+INSERT INTO `rides` VALUES ('41', '1', '12', '1713560400');
+INSERT INTO `rides` VALUES ('42', '1', '11', '1713560400');
+INSERT INTO `rides` VALUES ('43', '6', '9', '1713560400');
+INSERT INTO `rides` VALUES ('44', '6', '3', '1713560400');
+INSERT INTO `rides` VALUES ('45', '10', '9', '1713646800');
+INSERT INTO `rides` VALUES ('46', '7', '11', '1713646800');
+INSERT INTO `rides` VALUES ('47', '5', '11', '1713646800');
+INSERT INTO `rides` VALUES ('48', '3', '10', '1713733200');
+INSERT INTO `rides` VALUES ('49', '4', '8', '1713819600');
+INSERT INTO `rides` VALUES ('50', '7', '14', '1713819600');
+INSERT INTO `rides` VALUES ('51', '7', '14', '1713906000');
+INSERT INTO `rides` VALUES ('52', '4', '8', '1713992400');
+INSERT INTO `rides` VALUES ('53', '8', '3', '1713992400');
+INSERT INTO `rides` VALUES ('54', '8', '3', '1713992400');
+INSERT INTO `rides` VALUES ('55', '6', '7', '1713992400');
+INSERT INTO `rides` VALUES ('56', '10', '5', '1714078800');
+INSERT INTO `rides` VALUES ('57', '10', '6', '1714078800');
+INSERT INTO `rides` VALUES ('58', '1', '13', '1714078800');
+INSERT INTO `rides` VALUES ('59', '9', '13', '1714165200');
+INSERT INTO `rides` VALUES ('60', '5', '4', '1714165200');
+INSERT INTO `rides` VALUES ('61', '7', '2', '1714251600');
+INSERT INTO `rides` VALUES ('62', '5', '12', '1714251600');
+INSERT INTO `rides` VALUES ('63', '4', '13', '1714338000');
+INSERT INTO `rides` VALUES ('64', '3', '4', '1714338000');
+INSERT INTO `rides` VALUES ('65', '8', '11', '1714338000');
+INSERT INTO `rides` VALUES ('66', '7', '8', '1714338000');
+INSERT INTO `rides` VALUES ('67', '4', '8', '1714424400');
+INSERT INTO `rides` VALUES ('68', '6', '3', '1714510800');
+INSERT INTO `rides` VALUES ('69', '5', '7', '1714510800');
+INSERT INTO `rides` VALUES ('70', '2', '11', '1714597200');
+INSERT INTO `rides` VALUES ('71', '9', '3', '1714683600');
+INSERT INTO `rides` VALUES ('72', '7', '11', '1714683600');
+INSERT INTO `rides` VALUES ('73', '2', '13', '1714770000');
+INSERT INTO `rides` VALUES ('74', '7', '8', '1714770000');
+INSERT INTO `rides` VALUES ('75', '1', '14', '1714770000');
+INSERT INTO `rides` VALUES ('76', '7', '2', '1714770000');
+INSERT INTO `rides` VALUES ('77', '6', '15', '1714856400');
+INSERT INTO `rides` VALUES ('78', '9', '5', '1714942800');
+INSERT INTO `rides` VALUES ('79', '3', '12', '1715029200');
+INSERT INTO `rides` VALUES ('80', '2', '15', '1715029200');
+INSERT INTO `rides` VALUES ('81', '5', '13', '1715029200');
+INSERT INTO `rides` VALUES ('82', '3', '14', '1715115600');
+INSERT INTO `rides` VALUES ('83', '4', '10', '1715115600');
+INSERT INTO `rides` VALUES ('84', '7', '12', '1715115600');
+INSERT INTO `rides` VALUES ('85', '3', '13', '1715202000');
+INSERT INTO `rides` VALUES ('86', '6', '11', '1715202000');
+INSERT INTO `rides` VALUES ('87', '5', '13', '1715202000');
+INSERT INTO `rides` VALUES ('88', '2', '3', '1715288400');
+INSERT INTO `rides` VALUES ('89', '5', '14', '1715288400');
+INSERT INTO `rides` VALUES ('90', '7', '13', '1715288400');
+INSERT INTO `rides` VALUES ('91', '10', '1', '1715374800');
+INSERT INTO `rides` VALUES ('92', '3', '3', '1715461200');
+INSERT INTO `rides` VALUES ('93', '7', '15', '1715461200');
+INSERT INTO `rides` VALUES ('94', '9', '3', '1715461200');
+INSERT INTO `rides` VALUES ('95', '7', '14', '1715461200');
+INSERT INTO `rides` VALUES ('96', '4', '5', '1715547600');
+INSERT INTO `rides` VALUES ('97', '3', '10', '1715547600');
+INSERT INTO `rides` VALUES ('98', '3', '1', '1715547600');
+INSERT INTO `rides` VALUES ('99', '6', '9', '1715547600');
+INSERT INTO `rides` VALUES ('100', '5', '14', '1715634000');
+INSERT INTO `rides` VALUES ('101', '10', '7', '1715634000');
+INSERT INTO `rides` VALUES ('102', '4', '2', '1715634000');
+INSERT INTO `rides` VALUES ('103', '4', '3', '1715634000');
+INSERT INTO `rides` VALUES ('104', '7', '12', '1715720400');
+INSERT INTO `rides` VALUES ('105', '10', '8', '1715720400');
+INSERT INTO `rides` VALUES ('106', '5', '14', '1715720400');
+INSERT INTO `rides` VALUES ('107', '10', '3', '1715806800');
+INSERT INTO `rides` VALUES ('108', '1', '6', '1715806800');
+INSERT INTO `rides` VALUES ('109', '9', '6', '1715806800');
+INSERT INTO `rides` VALUES ('110', '8', '10', '1715806800');
+INSERT INTO `rides` VALUES ('111', '4', '14', '1715893200');
+INSERT INTO `rides` VALUES ('112', '5', '10', '1715893200');
+INSERT INTO `rides` VALUES ('113', '8', '14', '1715893200');
+INSERT INTO `rides` VALUES ('114', '9', '1', '1715893200');
+INSERT INTO `rides` VALUES ('115', '6', '1', '1715979600');
+INSERT INTO `rides` VALUES ('116', '3', '9', '1715979600');
+INSERT INTO `rides` VALUES ('117', '9', '5', '1715979600');
+INSERT INTO `rides` VALUES ('118', '10', '4', '1716066000');
+INSERT INTO `rides` VALUES ('119', '2', '1', '1716152400');
+INSERT INTO `rides` VALUES ('120', '10', '5', '1716152400');
+INSERT INTO `rides` VALUES ('121', '3', '9', '1716152400');
+INSERT INTO `rides` VALUES ('122', '2', '7', '1716152400');
+INSERT INTO `rides` VALUES ('123', '3', '2', '1716238800');
+INSERT INTO `rides` VALUES ('124', '2', '11', '1716238800');
+INSERT INTO `rides` VALUES ('125', '8', '8', '1716238800');
+INSERT INTO `rides` VALUES ('126', '6', '1', '1716325200');
+INSERT INTO `rides` VALUES ('127', '10', '3', '1716325200');
+INSERT INTO `rides` VALUES ('128', '5', '1', '1716325200');
+INSERT INTO `rides` VALUES ('129', '7', '1', '1716325200');
+INSERT INTO `rides` VALUES ('130', '3', '11', '1716411600');
+INSERT INTO `rides` VALUES ('131', '9', '15', '1716411600');
+INSERT INTO `rides` VALUES ('132', '2', '4', '1716411600');
+INSERT INTO `rides` VALUES ('133', '2', '1', '1716411600');
+INSERT INTO `rides` VALUES ('134', '6', '8', '1716498000');
+INSERT INTO `rides` VALUES ('135', '3', '12', '1716584400');
+INSERT INTO `rides` VALUES ('136', '2', '15', '1716584400');
+INSERT INTO `rides` VALUES ('137', '9', '6', '1716670800');
+INSERT INTO `rides` VALUES ('138', '6', '12', '1716670800');
+INSERT INTO `rides` VALUES ('139', '3', '1', '1716670800');
+INSERT INTO `rides` VALUES ('140', '9', '7', '1716670800');
+INSERT INTO `rides` VALUES ('141', '7', '7', '1716757200');
+INSERT INTO `rides` VALUES ('142', '6', '8', '1716757200');
+INSERT INTO `rides` VALUES ('143', '9', '2', '1716843600');
+INSERT INTO `rides` VALUES ('144', '4', '15', '1716930000');
+INSERT INTO `rides` VALUES ('145', '10', '1', '1716930000');
+INSERT INTO `rides` VALUES ('146', '1', '14', '1716930000');
+INSERT INTO `rides` VALUES ('147', '5', '9', '1717016400');
+INSERT INTO `rides` VALUES ('148', '7', '7', '1717102800');
+INSERT INTO `rides` VALUES ('149', '8', '7', '1717102800');
+INSERT INTO `rides` VALUES ('150', '7', '4', '1717102800');
+INSERT INTO `rides` VALUES ('151', '9', '15', '1717102800');
+INSERT INTO `rides` VALUES ('152', '2', '11', '1717189200');
+INSERT INTO `rides` VALUES ('153', '8', '5', '1717189200');
+INSERT INTO `rides` VALUES ('154', '9', '4', '1717275600');
+INSERT INTO `rides` VALUES ('155', '7', '1', '1717275600');
+INSERT INTO `rides` VALUES ('156', '6', '15', '1717362000');
+INSERT INTO `rides` VALUES ('157', '2', '10', '1717362000');
+INSERT INTO `rides` VALUES ('158', '3', '13', '1717362000');
+INSERT INTO `rides` VALUES ('159', '7', '2', '1717448400');
+INSERT INTO `rides` VALUES ('160', '7', '2', '1717448400');
+INSERT INTO `rides` VALUES ('161', '6', '2', '1717448400');
+INSERT INTO `rides` VALUES ('162', '8', '9', '1717534800');
+INSERT INTO `rides` VALUES ('163', '10', '13', '1717534800');
+INSERT INTO `rides` VALUES ('164', '6', '6', '1717621200');
+INSERT INTO `rides` VALUES ('165', '10', '8', '1717621200');
+INSERT INTO `rides` VALUES ('166', '10', '10', '1717621200');
+INSERT INTO `rides` VALUES ('167', '5', '1', '1717707600');
+INSERT INTO `rides` VALUES ('168', '1', '13', '1717794000');
+INSERT INTO `rides` VALUES ('169', '4', '6', '1717794000');
+INSERT INTO `rides` VALUES ('170', '8', '10', '1717794000');
+INSERT INTO `rides` VALUES ('171', '1', '2', '1717880400');
+INSERT INTO `rides` VALUES ('172', '10', '14', '1717880400');
+INSERT INTO `rides` VALUES ('173', '8', '15', '1717880400');
+INSERT INTO `rides` VALUES ('174', '7', '3', '1717966800');
+INSERT INTO `rides` VALUES ('175', '5', '3', '1717966800');
+INSERT INTO `rides` VALUES ('176', '2', '14', '1718053200');
+INSERT INTO `rides` VALUES ('177', '8', '5', '1718053200');
+INSERT INTO `rides` VALUES ('178', '8', '13', '1718053200');
+INSERT INTO `rides` VALUES ('179', '7', '7', '1718139600');
+INSERT INTO `rides` VALUES ('180', '2', '11', '1718139600');
+INSERT INTO `rides` VALUES ('181', '3', '8', '1718139600');
+INSERT INTO `rides` VALUES ('182', '10', '7', '1718139600');
+INSERT INTO `rides` VALUES ('183', '1', '2', '1718226000');
+INSERT INTO `rides` VALUES ('184', '3', '8', '1718312400');
+INSERT INTO `rides` VALUES ('185', '1', '5', '1718312400');
+INSERT INTO `rides` VALUES ('186', '8', '11', '1718398800');
+INSERT INTO `rides` VALUES ('187', '9', '5', '1718485200');
+INSERT INTO `rides` VALUES ('188', '4', '12', '1718571600');
+INSERT INTO `rides` VALUES ('189', '1', '11', '1718571600');
+INSERT INTO `rides` VALUES ('190', '2', '7', '1718658000');
+INSERT INTO `rides` VALUES ('191', '2', '4', '1718744400');
+INSERT INTO `rides` VALUES ('192', '9', '13', '1718744400');
+INSERT INTO `rides` VALUES ('193', '8', '8', '1718744400');
+INSERT INTO `rides` VALUES ('194', '5', '15', '1718744400');
+INSERT INTO `rides` VALUES ('195', '7', '8', '1718830800');
+INSERT INTO `rides` VALUES ('196', '8', '10', '1718830800');
+INSERT INTO `rides` VALUES ('197', '9', '13', '1718917200');
+INSERT INTO `rides` VALUES ('198', '4', '9', '1719003600');
+INSERT INTO `rides` VALUES ('199', '2', '9', '1719003600');
+INSERT INTO `rides` VALUES ('200', '5', '9', '1719003600');
+INSERT INTO `rides` VALUES ('201', '5', '7', '1719090000');
+INSERT INTO `rides` VALUES ('202', '8', '3', '1719090000');
+INSERT INTO `rides` VALUES ('203', '8', '8', '1719090000');
+INSERT INTO `rides` VALUES ('204', '7', '2', '1719090000');
+INSERT INTO `rides` VALUES ('205', '6', '13', '1719176400');
+INSERT INTO `rides` VALUES ('206', '10', '1', '1719176400');
+INSERT INTO `rides` VALUES ('207', '6', '2', '1719176400');
+INSERT INTO `rides` VALUES ('208', '5', '3', '1719176400');
+INSERT INTO `rides` VALUES ('209', '4', '12', '1719262800');
+INSERT INTO `rides` VALUES ('210', '3', '11', '1719262800');
+INSERT INTO `rides` VALUES ('211', '8', '6', '1719349200');
+INSERT INTO `rides` VALUES ('212', '4', '8', '1719349200');
+INSERT INTO `rides` VALUES ('213', '2', '11', '1719349200');
+INSERT INTO `rides` VALUES ('214', '2', '14', '1719435600');
+INSERT INTO `rides` VALUES ('215', '6', '11', '1719435600');
+INSERT INTO `rides` VALUES ('216', '2', '14', '1719522000');
+INSERT INTO `rides` VALUES ('217', '5', '12', '1719608400');
+INSERT INTO `rides` VALUES ('218', '9', '15', '1719608400');
+INSERT INTO `rides` VALUES ('219', '6', '13', '1719608400');
+INSERT INTO `rides` VALUES ('220', '8', '6', '1719608400');
+INSERT INTO `rides` VALUES ('221', '10', '3', '1719694800');
+INSERT INTO `rides` VALUES ('222', '5', '14', '1719694800');
+INSERT INTO `rides` VALUES ('223', '4', '7', '1719694800');
+INSERT INTO `rides` VALUES ('224', '5', '9', '1719694800');
+INSERT INTO `rides` VALUES ('225', '7', '13', '1719781200');
+INSERT INTO `rides` VALUES ('226', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('227', '1', '6', '1712091600');
+INSERT INTO `rides` VALUES ('228', '1', '11', '1712091600');
+INSERT INTO `rides` VALUES ('229', '1', '14', '1712091600');
+INSERT INTO `rides` VALUES ('230', '5', '1', '1712091600');
+INSERT INTO `rides` VALUES ('231', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('232', '1', '1', '1712178000');
+INSERT INTO `rides` VALUES ('233', '1', '15', '1712178000');
+INSERT INTO `rides` VALUES ('234', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('235', '1', '8', '1712091600');
+INSERT INTO `rides` VALUES ('236', '1', '13', '1712091600');
+INSERT INTO `rides` VALUES ('237', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('238', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('239', '5', '1', '1712178000');
+INSERT INTO `rides` VALUES ('240', '5', '1', '1712091600');
+INSERT INTO `rides` VALUES ('241', '5', '1', '1713819600');
+INSERT INTO `rides` VALUES ('242', '5', '6', '1712091600');
+INSERT INTO `rides` VALUES ('243', '5', '10', '1712091600');
+INSERT INTO `rides` VALUES ('244', '5', '15', '1712091600');
+INSERT INTO `rides` VALUES ('245', '5', '5', '1712091600');
+INSERT INTO `rides` VALUES ('246', '5', '11', '1712091600');
+INSERT INTO `rides` VALUES ('247', '5', '6', '1712091600');
+INSERT INTO `rides` VALUES ('248', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('249', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('250', '1', '1', '1712091600');
+INSERT INTO `rides` VALUES ('251', '8', '1', '1712178000');
+INSERT INTO `rides` VALUES ('252', '4', '1', '1712178000');
+INSERT INTO `rides` VALUES ('253', '4', '1', '1712178000');
+INSERT INTO `rides` VALUES ('254', '7', '1', '1712178000');
+INSERT INTO `rides` VALUES ('255', '9', '1', '1712178000');
+INSERT INTO `rides` VALUES ('256', '2', '1', '1712178000');
+INSERT INTO `rides` VALUES ('257', '4', '1', '1712178000');
+INSERT INTO `rides` VALUES ('258', '7', '1', '1712178000');
+INSERT INTO `rides` VALUES ('259', '1', '1', '1712178000');
+INSERT INTO `rides` VALUES ('260', '7', '1', '1712178000');
+INSERT INTO `rides` VALUES ('261', '4', '1', '1712178000');
+INSERT INTO `rides` VALUES ('262', '2', '1', '1712178000');
+INSERT INTO `rides` VALUES ('263', '2', '15', '1712178000');
+INSERT INTO `rides` VALUES ('264', '2', '6', '1712178000');
+INSERT INTO `rides` VALUES ('265', '1', '1', '1712264400');
+INSERT INTO `rides` VALUES ('266', '1', '1', '1712264400');
+SET FOREIGN_KEY_CHECKS=1;

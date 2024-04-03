@@ -1,0 +1,12 @@
+PHP 8.1
+MySQL 8.0
+Apache 2.4
+
+Установка
+Создать БД, импортировать таблицы из папки Таблицы в БД MySQL.
+Открыть файл App/config.php Изменить настройки подключения к БД   
+'host' => 'localhost',
+'dbname' => 'intasbase',
+'username' => 'root',
+'password' => ''
+Перейти по адресу вида http://test-intas-company.local/App/
